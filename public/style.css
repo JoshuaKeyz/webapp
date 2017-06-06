@@ -1,0 +1,31 @@
+.mobile-view{display: none;}
+.desktop-view{display: block;}
+div.page-header{margin-top: 0px; margin-bottom: 0px;}
+div.page-header h3, div.page-header h4{margin-bottom: 0.5px; display: inline-block;margin-top: 15px;}
+
+/*.row{margin-left: 5%; margin-right: 5%;}*/
+div.page-header div.pull-right{display: inline-block;margin-top: 15px;}
+div.page-header  div.pull-right > div {display: inline-block;  margin-left: 25px;}
+div.page-header div.pull-right > div > span{margin-right:10px;}
+div.page-header div.pull-right > div a, div.page-header div.pull-right a {color: black;}
+div.page-header h2.mobile-view{display: none;}
+.desktop-view .navbar {background-color: white !important; height: 10px !important}
+.desktop-view .navbar #desktopmenu {padding: 0px !important;}
+.desktop-view .navbar ul{padding: 0px !important;}
+@media (MAX-WIDTH: 480px){
+    .mobile-view{display: block;}
+    .desktop-view{display: none;}
+
+
+    div.page-header h2.mobile-view{display: inline-block;}
+    
+    div.page-header div.pull-right > a#email-signup{display: none;}
+    div.page-header div.pull-right {display: none;}
+    div.page-header div.mobile-view{display:inline-block; margin-left: 40px;}
+    div.page-header{display: none;}
+    div.navbar-brand span{margin-left: 15px; font-size: 15px;}
+}
+@media (MAX-WIDTH: 1024px) AND (MIN-WIDTH: 480px){
+    .mobile-view{display: none;}
+    
+}
