@@ -9,9 +9,12 @@ div.page-header  div.pull-right > div {display: inline-block;  margin-left: 25px
 div.page-header div.pull-right > div > span{margin-right:10px;}
 div.page-header div.pull-right > div a, div.page-header div.pull-right a {color: black;}
 div.page-header h2.mobile-view{display: none;}
-.desktop-view .navbar {background-color: white !important; height: 10px !important}
+.desktop-view .navbar {background-color: white !important;height: 41px; min-height: 15px !important; }
 .desktop-view .navbar #desktopmenu {padding: 0px !important;}
-.desktop-view .navbar ul{padding: 0px !important;}
+.desktop-view div.container-fluid{padding: 0px !important;}
+.desktop-view .navbar ul{padding: 0px !important; }
+.desktop-view .navbar ul li{ max-height: 40px !important;}
+.desktop-view .navbar ul li a{max-height: 40px; padding: 10px;}
 @media (MAX-WIDTH: 480px){
     .mobile-view{display: block;}
     .desktop-view{display: none;}
@@ -27,5 +30,5 @@ div.page-header h2.mobile-view{display: none;}
 }
 @media (MAX-WIDTH: 1024px) AND (MIN-WIDTH: 480px){
     .mobile-view{display: none;}
-    
+    .desktop-view{display: block;}
 }
