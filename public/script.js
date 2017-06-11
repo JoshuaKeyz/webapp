@@ -2,19 +2,21 @@ var app = angular.module("shopApp", ['ngRoute'])
 app.controller('MainController', function(){
 
 })
-
 app.component("homepageComponent", {
-    templateUrl: "app/homepage.html", 
+    templateUrl: "app/homepage.html"
+})
+app.component("womenComponent", {
+    templateUrl: "app/women.component.html", 
     controller: function(){
         
     }
-}).component("categoriesComponent", {
-    templateUrl: "app/categories.html",
+}).component("menComponent", {
+    templateUrl: "app/men.component.html",
     controller: function(){
         
     }
-}).component("detailsComponent", {
-    templateUrl: "app/details.html",
+}).component("accessoriesComponent", {
+    templateUrl: "app/accessories.component.html",
     controller: function(){
         
     }

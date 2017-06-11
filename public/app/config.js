@@ -3,14 +3,14 @@
     function($locationProvider, $routeProvider){
         $locationProvider.hashPrefix('!')
         $routeProvider
-            .when('/phones', {
-                template: '<details-component></details-component>'
+            .when('/women', {
+                template: '<women-component></women-component>'
             })
-            .when('/phones/:phoneId', {
-                template: '<categories-component></categories-component>'
+            .when('/men', {
+                template: '<men-component></men-component>'
             })
-            .when('/categories', {
-                template: "<homepage-component></homepage-component>"
+            .when('/accessories', {
+                template: "<accessories-component></accessories-component>"
             })
             .otherwise('/phones')
     }])
