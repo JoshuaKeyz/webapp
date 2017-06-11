@@ -1,0 +1,52 @@
+<div class = "desktop-view tablet-view">
+            <div class = "page-header">
+                <a href = "#!/phones"><h3>Shop App</h3></a>
+                <h2 class= 'mobile-view'>SApp</h2>
+                <div class = "pull-right">
+                    <a id = 'email-signup' href = "">E-mail sign up</a>
+                    <div id = 'bag'>
+                        <span class = "glyphicon glyphicon-briefcase"></span><a href = "">Bag</a>
+                    </div>
+                </div>
+                <div class = 'mobile-view'><h4>Bag</h4></div>
+            </div>
+             <nav class = "navbar navbar-default">
+                <div class = "container-fluid">
+                    <div class = "navbar-header"></div>
+                    <div class = "collapse navbar-collapse" id = "desktopmenu">
+                        <ul class = "nav navbar-nav">
+                            <li ng-class = "{active: navCtrl.isActive(1)}"><a href = "#!/phones" ng-click = "navCtrl.makeActive(1)">Women</a></li>
+                            <li ng-class = "{active: navCtrl.isActive(2)}"><a href = "/#!/phones/5" ng-click = "navCtrl.makeActive(2)">Men</a></li>
+                            <li ng-class = "{active: navCtrl.isActive(3)}"><a href = "/#!/categories" ng-click = "navCtrl.makeActive(3)">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class = "mobile-view">
+            <nav class = "navbar  navbar-default">
+                <div class = "container-fluid">
+                    <div class = "navbar-header">
+                        <button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" 
+                            data-target = "#menu">
+                            <span class = "icon-bar"></span>
+                            <span class = "icon-bar"></span>
+                            <span class = "icon-bar"></span>
+                        </button>
+                        <div class = "navbar-brand" href = "#">SApp <span class = "glyphicon glyphicon-briefcase"></span></div>
+                    </div>
+                    <div class = "collapse navbar-collapse" id = "menu">
+                       <ul class = "nav navbar-nav">
+                            <li ng-class = "{active: navCtrl.isActive(1)}"><a href = "#!/phones" ng-click = "navCtrl.makeActive(1)">Women</a></li>
+                            <li ng-class = "{active: navCtrl.isActive(2)}"><a href = "/#!/phones/5" ng-click = "navCtrl.makeActive(2)">Men</a></li>
+                            <li ng-class = "{active: navCtrl.isActive(3)}"><a href = "/#!/categories" ng-click = "navCtrl.makeActive(3)">Accessories</a></li>
+                        </ul>
+                        <form class = "navbar-form navbar-left">
+                            <div class = "form-group">
+                                <input type = "text" class = "form-control" placeholder = "search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
