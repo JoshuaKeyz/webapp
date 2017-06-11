@@ -2,7 +2,7 @@
 <html ng-app = "shopApp">
     <head>
         <title>Web App</title>
-        <meta name = "viewport" content = "width=device-width; height = device-height"/>
+        <meta name = "viewport" content = "width=device-width; height = device-height; initial-scale=1; maximul-scale=1"/>
         <script type = "text/javascript" src = "bower_components/angular/angular.min.js"></script>
         <script type = "text/javascript" src = "bower_components/angular-route/angular-route.min.js"></script>
         <script type = "text/javascript" src = "bower_components/angular-animate/angular-animate.min.js"></script>
@@ -16,6 +16,5 @@
     <body class = "container-fluid">
       <nav-component></nav-component>
       <div ng-view></div>
-      <button onclick = "alert(window.innerWidth)">Click me</button>
     </body>
 </html>

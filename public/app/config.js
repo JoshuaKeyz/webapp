@@ -12,6 +12,9 @@
             .when('/accessories', {
                 template: "<accessories-component></accessories-component>"
             })
-            .otherwise('/phones')
+            .when('/home', {
+                template: '<homepage-component></homepage-component>'
+            })
+            .otherwise('/home')
     }])
 })(window.angular)

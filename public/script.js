@@ -29,8 +29,15 @@ app.component("womenComponent", {
         this.isActive = function(category){
             return this.selected == category;
         }
-        this.selected = "1"
+        //this.selected = "1"
     },
     controllerAs: "navCtrl"
+}).component("carouselComponent", {
+    templateUrl: "app/carousel.component.html"
+}).component("sampleComponent", {
+    templateUrl: "app/sample.component.html"
+}).component("newArrivalsComponent", {
+    templateUrl: "app/new-arrivals.component.html"
+}).component("allArrivalsComponent", {
+    templateUrl: "app/all-arrivals.component.html"
 })
-
