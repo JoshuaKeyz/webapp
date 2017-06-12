@@ -22,12 +22,27 @@ app.component("womenComponent", {
     }
 }).component("navComponent", {
     templateUrl: "app/nav.component.html", 
-    controller: function(){
+    controller: function($route){
         this.makeActive = function(category){
            this.selected = category;
         }
         this.isActive = function(category){
             return this.selected == category;
+        }
+        let route = $route.current.$$route.originalPath
+        switch(route){
+            case '/women':
+                this.selected = "1";
+                console.log(route);
+            break;
+            case '/men':
+                this.selected = "2";
+                console.log(route);
+            break;
+            case '/accessories': 
+                this.selected = "3";
+                console.log(route);
+            break;
         }
         //this.selected = "1"
     },
@@ -40,4 +55,6 @@ app.component("womenComponent", {
     templateUrl: "app/new-arrivals.component.html"
 }).component("allArrivalsComponent", {
     templateUrl: "app/all-arrivals.component.html"
+}).component("footerComponent", {
+    templateUrl: "app/footer.component.html"
 })
