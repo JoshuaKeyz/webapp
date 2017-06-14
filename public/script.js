@@ -42,8 +42,10 @@ app.component("womenComponent", {
             case '/accessories': 
                 this.selected = "3";
                 console.log(route);
-            break;
+            break;         
+
         }
+    
         //this.selected = "1"
     },
     controllerAs: "navCtrl"
